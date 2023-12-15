@@ -203,7 +203,6 @@ resource "null_resource" "configure-cat-app" {
 }
 
 module "azure-backup" {
-  source  = "ravensorb/azure-backup/azurerm"
-  version = "1.0.2"
+  source  = "github.com/Mason-776/terraform-azurerm-azure-backup"
   resource_group_name = "${var.prefix}-public"
 }
